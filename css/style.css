@@ -125,7 +125,6 @@ transition: 2s;
 }
 @keyframes smallrotation{
     0% {rotate: 0deg;}
-
     80% {rotate: 270deg;}
     100% {rotate: 0deg;}
 
@@ -160,4 +159,77 @@ transition: 2s;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+ 
+/* ex 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: move-top-white 2s linear;
+}
+@keyframes move-top-white{
+
+    0% {left: 10%;}
+   
+    50%{left:calc(100% - 60px);}
+    
+    100% {left: 10%;}
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-bottom-white 2s linear;
+}
+@keyframes move-bottom-white{
+
+    0% {right: 20%;}
+   
+    50%{right:calc(100% - 60px);}
+    
+    100% {right: 20%;}
+}
+
+/* ex 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-top-white 2s linear;
+}
+@keyframes move-top-white{
+
+    0% {left: 10%;
+        top:-10px;
+    }
+    25%{left:calc(100% - 30px);
+        top: -10px;}
+
+
+    50%{left:calc(100% - 30px);
+        top: 60px;}
+    
+    70%{left: 10%;
+            top: 60px;}
+
+
+    100% {left: -10%;
+        top: -10px;}
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move-bottom-white 2s linear;
+}
+@keyframes move-bottom-white{
+    0% {right: 20%;
+        bottom:-10px;
+    }
+    25%{right:calc(100% - 30px);
+        bottom: -10px;}
+
+
+    50%{right:calc(100% - 30px);
+        bottom: 100%;}
+    
+    70%{right: 10%;
+            bottom: 100%;}
+
+     85%{right:0;
+       bottom: -10px;}
+      
+
+    100% {right: 20%;
+        bottom:-10px;}
 }
